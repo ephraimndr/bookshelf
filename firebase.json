@@ -1,0 +1,29 @@
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "solana-bookshelf",
+          "configurations": {
+            "web": "1:1066053021524:web:c8a203f04998cbae6a22c1"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "site": "efraim",
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
